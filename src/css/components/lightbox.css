@@ -5,3 +5,10 @@ dialog::backdrop {
     background: burlywood;
     opacity: 30%;
 }
+
+#lightbox {
+    background: white;
+    border: 3px solid rgb(1, 1, 112);
+    border-radius: 10px;
+    padding: 30px;
+}

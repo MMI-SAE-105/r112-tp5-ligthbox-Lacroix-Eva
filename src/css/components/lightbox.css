@@ -3,12 +3,32 @@
 */
 dialog::backdrop {
     background: burlywood;
-    opacity: 30%;
+    animation: fond 1s forwards;
 }
 
 #lightbox {
-    background: white;
-    border: 3px solid rgb(1, 1, 112);
     border-radius: 10px;
     padding: 30px;
+    animation: open 1s forwards;
 }
+
+@keyframes fond {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 50%;
+    }
+}
+
+@keyframes open {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+

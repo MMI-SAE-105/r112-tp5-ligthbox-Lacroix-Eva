@@ -1,3 +1,7 @@
 /**
 * Lightbox
 */
+dialog::backdrop {
+    background: burlywood;
+    opacity: 30%;
+}

@@ -1,15 +1,17 @@
 // *** LIGHTBOX ***
-// Étape 1 : Sélectionner le LightBox et gérer sa fermeture
 const lb = document.querySelector("#lightbox");
 
 lb.addEventListener("click", function() {
-    lb.close(); // Fermer le LightBox
+    lb.close();
 });
 
 const images = document.querySelectorAll("img");
 
 images.forEach(image => {
     image.addEventListener("click", function() {
-        console.log("Une miniature a été cliquée !");
+        const fullImg = image.dataset.fullImg;
+        const imgElement = lb.querySelector("img");
+        imgElement.src = fullImg;
+        lb.showModal();
     });
 });

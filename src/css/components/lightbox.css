@@ -2,8 +2,8 @@
 * Lightbox
 */
 dialog::backdrop {
-    background: burlywood;
-    animation: fond 1s forwards;
+    background: rgb(105, 61, 2);
+    animation: fond 2s forwards;
 }
 
 #lightbox {
@@ -18,7 +18,7 @@ dialog::backdrop {
     }
 
     to {
-        opacity: 50%;
+        opacity: 60%;
     }
 }
 

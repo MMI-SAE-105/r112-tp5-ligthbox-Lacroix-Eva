@@ -8,3 +8,8 @@ lb.addEventListener("click", function() {
 
 const images = document.querySelectorAll("img");
 
+images.forEach(image => {
+    image.addEventListener("click", function() {
+        console.log("Une miniature a été cliquée !");
+    });
+});
